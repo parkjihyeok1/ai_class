@@ -2,7 +2,7 @@
 #1. Introduction
 Momentum contrast for unsupervised visual representation learning (MoCo) 논문
 https://github.com/facebookresearch/moco
-https://github.com/ppwwyyxx/moco.tensorflow
+https://github.com/ppwwyyxx/moco.tensorflow 에 있는 코드 활용
 # 슈도코드
 ```
 #모멘텀 대조 (MoCo) 알고리즘의 수학적인 원리를 포함한 슈도코드  
