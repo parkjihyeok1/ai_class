@@ -86,4 +86,4 @@ To train a linear classifier using the pre-trained features, run:
 KNN Evaluation:  
 Instead of Linear Classification, a cheap but rough evaluation is to perform a feature-space kNN using the training set:  
 horovodrun -np 8 ./eval_knn.py --load /path/to/checkpoint --data /path/to/imagenet --top-k 200  
-메인코드는 data.py , eval_knn.py , main_moco.py , resent.py , serve-data.py 를 실행해야합니다.  
+메인코드는 data.py , eval_knn.py , main_moco.py , resent.py , serve-data.py , main_lincls.py 를 실행해야합니다.  
