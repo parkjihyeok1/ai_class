@@ -11,8 +11,8 @@ encoder = DynamicEncoder()
 #모멘텀 인코더 초기화  
 momentum_encoder = MomentumEncoder()  
 #동적 모델과 모멘텀 인코더를 사용하여 사전 훈련된 인코더 구축  
-def build_pretrained_encoder(dataset):  
-    for image in dataset:  
+def build_pretrained_encoder(dataset)  
+    for image in dataset  
         features = encoder(image)  # 동적 모델을 사용하여 특성 벡터 생성  
         momentum_features = momentum_encoder.get_features()  # 모멘텀 인코더의 특성 벡터 가져오기  
         momentum_encoder.update(features)  # 모멘텀 인코더 업데이트  
@@ -21,17 +21,17 @@ def build_pretrained_encoder(dataset):
         # 동적 모델 최적화  
         optimizer.step(loss)  
 #데이터로부터 표현 학습을 위한 특성 벡터 생성  
-def generate_features(image):  
+def generate_features(image)  
     features = encoder(image)  
     return features  
 #특성 벡터의 일관성 검사  
-def check_consistency(features):  
+def check_consistency(features)  
     momentum_features = momentum_encoder.get_features()  
     # 대조 손실 계산  
     loss = -log(exp(features * momentum_features / τ) / sum(exp(features * momentum_features / τ)))  
     return loss  
 #주어진 특성 벡터를 사용하여 선형 분류기를 훈련  
-def train_linear_classifier(features, labels):  
+def train_linear_classifier(features, labels)  
     classifier = LinearClassifier()  
     classifier.train(features, labels)  
 #예시 데이터셋으로 사전 훈련된 인코더 구축  
