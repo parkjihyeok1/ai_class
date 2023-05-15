@@ -4,6 +4,7 @@ Momentum contrast for unsupervised visual representation learning (MoCo) 논문
 https://github.com/facebookresearch/moco
 https://github.com/ppwwyyxx/moco.tensorflow
 # 슈도코드
+```
 #모멘텀 대조 (MoCo) 알고리즘의 수학적인 원리를 포함한 슈도코드  
 #동적 모델의 인코더 초기화  
 encoder = DynamicEncoder()  
@@ -44,7 +45,7 @@ loss = check_consistency(features)
 #특성 벡터를 사용하여 선형 분류기 훈련  
 labels = ExampleLabels()  
 train_linear_classifier(features, labels)  
-
+```
 # 모델에 대한 설명 및 디테일  
 Momentum Contrast for Unsupervised Visual Representation Learning (MoCo)는 자가 지도 학습(self-supervised learning)을 사용하여 시각적 표현 학습을 수행하는 방법을 제안한 논문입니다.   
 이 방법은 사전 훈련된 모델을 사용하여 입력 이미지를 잠재 공간으로 임베딩하고, 이 임베딩을 사용하여 이미지 간의 유사성을 측정합니다.  
