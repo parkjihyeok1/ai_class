@@ -2,7 +2,7 @@
 #1. 바꿔야한다고 생각하는 부분? 발전 될 수 있다고 생각하는 부분?  
  -1. 모델 아키텍쳐 개선: ResNet 기반의 인코더-디코더 구조인데, 개선하기 위해서 깊이를 더 깊게 해야한다고 생각했습니다.  
 ex) ResNet-50 -> ResNet-200 으로 깊이를 더 깊게 변경  
--2. MoCo v1은 간단하게 어그멘테이션으로 사용했지만, ex) 색상 변형 및 이미지의 크롭 .., color distortion, random resize crop, blur를 이용한 더 강력한 어그멘테이션으로 확장?  
+-2. MoCo v1은 간단하게 어그멘테이션으로 사용했지만, ex) 색상 변형 및 이미지의 크롭 .., color distortion, random resize crop, blur를 이용한 어그멘테이션으로 확장?  
 
 #2. 슈도 코드 변경
 
