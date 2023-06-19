@@ -81,7 +81,7 @@ contrastive_loss() 함수에서 대조 손실을 계산하기 위해 코사인 �
 
 
 # 수정된 코드
-이런식으로 코드 변형만 했습니다 ... ㅠ 실제 실행은 에러가 계속떠서 못했습니다..
+이런식으로 코드 변형만 했습니다 ... ㅠ 실제 실행은 에러가 계속떠서 못했습니다..  
 q_encoder = Resnet200(pretrained=False)  
 define classifier for our task  
 classifier = nn.Sequential(OrderedDict([  
